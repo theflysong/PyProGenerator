@@ -1,0 +1,8 @@
+GCC := gcc
+GPP := g++
+
+%.c.o: %.c
+	$(GCC) -c -o $@ $^
+
+%.cpp.o: %.cpp
+	$(GPP) -c -o $@ $^
